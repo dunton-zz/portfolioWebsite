@@ -1,0 +1,94 @@
+@media screen {
+	body {
+  		font-family: 'Poppins', Helvetica, sans-serif;
+  	 	height: 100%;
+  	 	margin: 0;
+  	 	padding: 0;
+	}	
+
+	.mobile {
+		display: block;
+	}
+
+	.small-screen {
+		display: none;
+	}
+
+	.main-body {
+		display: none;
+	}
+
+	.top-header {
+		background-color: #2b394f;
+		color: #d7dae0;
+		text-align: center;
+	}
+
+	.bottom-scroll {
+		background-color: #2b394f;
+		color: #d7dae0;
+		text-align: center;
+		position: relative;
+	}
+
+	.scroll-text {
+		top: 50%;
+	}
+
+	#project0-mobile {
+		display: none;
+	}
+
+	#project1-mobile {
+		display: block;
+	}
+
+	#project2-mobile {
+		display: none;
+	}
+
+	#project3-mobile {
+		display: none;
+	}
+
+	#project4-mobile {
+		display: none;
+	}
+
+	#project5-mobile {
+		display: none;
+	}
+
+	#resume-mobile {
+		display: none;
+	}
+
+	.mobile-resume {
+		background-color: #d7dae0;
+		text-align: center;
+		color: #d7dae0;
+	}
+
+
+	#mobile-right-arrow {
+		height: 50px;
+		width: 50px;
+		float: right;	
+	}
+
+	.img-responsive {
+	height: 90%;
+	width: 90%;
+	}
+
+
+	#mobile-left-arrow {
+		height: 50px;
+		width: 50px;
+		float: left;
+	}
+
+	#projectHeader {
+		text-align: center;
+	}
+}

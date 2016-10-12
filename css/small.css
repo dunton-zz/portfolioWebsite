@@ -1,0 +1,231 @@
+@media screen {
+	body {
+  		font-family: 'Poppins', Helvetica, sans-serif;
+  	 	height: 100%;
+  	 	margin: 0;
+  	 	padding: 0;
+	}
+
+	.sidebar {
+		display: none;
+	}
+
+	.name {
+		color: #d7dae0;
+		text-align: center;
+	}
+
+	.small-screen {
+		display: block;
+	}
+
+  .mobile {
+    display: none;
+  }
+
+  #projectHeader {
+    text-align: center;
+  }
+
+  .img-responsive {
+  height: 90%;
+  width: 90%;
+  }
+
+	#project0-small {
+		display: none;
+	}
+
+	#project1-small {
+		display: block;
+	}
+
+	#project2-small {
+		display: none;
+	}
+
+	#project3-small {
+		display: none;
+	}
+
+	#project4-small {
+		display: none;
+	}
+
+	#project5-small {
+		display: none;
+	}
+
+	#resume-small {
+		display: none;
+	}
+
+	#project4-details-small {
+		display: block;
+	}
+
+
+	#small-left-arrow {
+		height: 50;
+		width: 25%;
+		float: left;
+		margin-left: 40px;
+		margin-top: 30px;
+	}
+
+	#small-right-arrow {
+		height: 50;
+		width: 25%;
+		float: right;
+		margin-top: 30px;
+		margin-right: 30px;
+		
+	}
+
+	#projectScroll {
+		text-align: center;
+	}
+
+	#small-scroll {
+		display: block;
+	}
+
+	.main-body {
+	display: none;
+	}
+
+	/* Place Navbar */
+.navbar {
+  position: absolute;
+  left: 30px;
+  width: 200px;
+  margin-top: 20px;
+  
+ 
+  -webkit-box-shadow: 1px 0 1px 0 rgba(0,0,0,.1);
+  box-shadow: 1px 0 1px 0 rgba(0,0,0,.1);
+ 
+  background-color: #2b394f;
+}
+  .navbar i { margin-right: 10px; }
+  .navbar a.menu {
+    display: block;
+    margin: 0;
+    width: 100%;
+    height: 50px;
+    color: #444;
+    background-color: #fff;
+    font-size: 23px;
+    line-height: 50px;
+  }
+  .navbar .link {
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 100%;
+    height: 50px;
+    z-index: 1;
+ 
+    perspective: 100px;
+    -webkit-perspective: 100px; /* Safari and Chrome */
+ 
+    transition: .23s; 
+    -webkit-transition: .23s;   
+  }
+    .navbar .link:hover { height: 150px; }
+      .navbar .link.large:hover { height: 230px; }
+ 
+    .navbar .link a { 
+      display: block;
+      color: #999; 
+      text-align: left;
+      padding-left: 20px;
+ 
+      transition: .3s; 
+      -webkit-transition: .3s;   
+    }
+      .navbar .link a:hover {     
+        color: #2b394f;
+        padding-left: 30px;
+      } 
+
+    .navbar .link span.active,
+    .navbar .link .hover-top,
+    .navbar .link .hover-bot {     
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 50px; /*50*/
+      line-height: 50px;
+      left: 0;
+      top: 0;
+      color: #777;
+      font-size: 12px;
+ 
+      transition: .23s; 
+      -webkit-transition: .23s;   
+    }
+ 
+      /* Larger foldout size */
+      .navbar .link.large .hover-top,
+      .navbar .link.large .hover-bot {
+        line-height: 30px;
+        height: 120px; /*90*/
+      }
+      /* Transforms how long distance is between main headers */
+      .navbar .link.large:hover .hover-bot {
+        transform: translateY(140px) rotateX( 0deg ); /*140px*/
+        -webkit-transform: translateY(140px) rotateX( 0deg );
+        background-color: #f0f0f0;
+      }
+ 
+    .navbar .link span.active { 
+      top: 0;     
+      left: 0;
+      background-color: #fff;
+      color: #aaa;
+      font-size: 13px;
+      border-top: 1px solid rgba(0,0,0,.1);
+    }
+ 
+    .navbar .link .hover-top {
+      top: 50px;
+      transform-origin: 0% 0% 0px;
+      -webkit-transform-origin: 0% 0% 0px;
+ 
+      transform: rotateX( -90deg );
+      -webkit-transform: rotateX( -90deg );
+      z-index: -1;
+ 
+      background-color: #fff;
+    }
+      .navbar .link:hover .hover-top {
+        transform: rotateX( 0deg );
+        -webkit-transform: rotateX( 0deg );
+        background-color: #f0f0f0;
+    }
+    .navbar .link .hover-bot {
+      transform-origin: 0% 100% 0px;
+      -webkit-transform-origin: 0% 100% 0px;
+ 
+      transform: rotateX( 130deg );
+      -webkit-transform: rotateX( 130deg );
+      z-index: -1;
+ 
+      background-color: #888;
+    }
+      .navbar .link:hover .hover-bot {
+        transform: translateY(100px) rotateX( 0deg );
+        -webkit-transform: translateY(100px) rotateX( 0deg );
+        background-color: #f0f0f0;
+      }
+     
+    .navbar .end {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      height: 100%;
+      background-color: #fff;
+      border-top: 1px solid rgba(0,0,0,.1);
+    }
+}
