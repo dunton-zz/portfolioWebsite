@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Ryan Dunton</title>
+		<link rel="stylesheet"  media="screen and (min-width: 981px)" href="css/main.css">
+		<link rel="stylesheet" media="screen and (min-width:701px) and (max-width: 980px)" href="css/small.css">
+		<link rel="stylesheet" media="screen and (max-width: 700px)" href="css/mobile.css">
+		<link rel = "stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+
+		<script type ="text/javascript" src="js/project.js"></script>
+		<script type="text/javascript"> </script>
+
+	</head>
+	<body>
+		<br>
+		<div class = "container main-body">
+			<div class="row">
+				<div class="col-xs-3 sideBar">
+					<br>
+					<div class="navbar">
+				
+					<div class="name">
+						<h1>Ryan Dunton</h1>
+						<h3>Developer</h3>
+					</div>
+ 
+					<div class="link large" href="#">
+					  	<span class="active"><i class="icon-twitter"></i>Projects</span>
+					  	<ul class="hover-top">
+					  		<a href="#" onclick='showProjects("project0"); showProjectDetails("project0-details"); setCount(0);'>Bugger Game</a>
+					    	<a href="#" onclick='showProjects("project1"); showProjectDetails("project1-details"); setCount(1);'>Location Map</a> 
+					    	
+					    	<a href="#" onclick='showProjects("project2"); showProjectDetails("project2-details"); setCount(2);'>Dog Trading Cards</a>
+					    	
+
+					  	</ul>
+					  	<ul class="hover-bot">
+					    	<a href="#" onclick='showProjects("project3"); showProjectDetails("project3-details"); setCount(3);'>Portfolio Spec</a>
+					    	<a href="#" onclick='showProjects("project4"); showProjectDetails("project4-details"); setCount(4);'>Adidas Scraper</a>
+					    	<a href="#" onclick='showProjects("project5"); showProjectDetails("project5-details"); setCount(5);'>Website Optimization</a>
+
+
+					  	</ul>
+					  
+					</div>
+					<div class="link" href="#">
+					  <span class="active"><i class="icon-facebook"></i>Resume</span>
+					  	<ul class="hover-bot">
+					    	<a href="media/DuntonResume_FE.pdf" download>Download</a> 
+					  	</ul>
+					  	<ul class="hover-top">
+					    	<a href="#" onclick='showProjects("resume")'>View Resume</a> 
+					  	</ul>
+						</div>
+						<div class="link" href="#">
+					  	<span class="active"><i class="icon-google-plus"></i>Social</span>
+					  	<ul class="hover-bot">
+					    	<a href="https://www.linkedin.com/in/ryan-dunton-8b2ba152">LinkedIn</a> 
+					  	</ul>
+					  	<ul class="hover-top">
+					    	<a href="https://www.twitter.com/Ryan_Dunton">Twitter</a> 
+					  	</ul>
+						</div>
+					<div class="end"></div>
+					</div>
+					<br>
+					<br>
+						
+					
+				</div>
+					
+				
+					<div class="col-xs-1">
+							<div id="left-arrow">
+								<a id="zero" href="#" onclick= 'showProjects(minusCounter()); showProjectDetails(secondMinusCounter()); '>
+									<img class="img-responsive" src="	media/left-arrow.jpg">
+								</a>
+							</div>
+					</div>
+
+					<div class="col-xs-7">
+						
+						<div class="projectView">
+							
+							<div id="project0">
+								<div id="projectHeader">
+									<h1>Project Name: Bugger Game</h1>
+									<br>
+								</div>
+									<a href="https://github.com/dunton/froggerGame" target="_blank">
+										<img class="img-responsive" src = "media/bugger.jpg" alt= "Bugger Pic">	
+									</a>
+									<br>
+									<h3>Project Details</h3>
+									<div id="project0-details"></div>					
+							</div>
+							<div id="project1">
+								<div id="projectHeader">
+									<h1>Project Name: Location Map</h1>
+									<br>
+								</div>
+								<a href="">
+									<img class="img-responsive" src = "media/wiki.jpg" alt="Wiki API">
+								</a>
+								<br>
+								<h3>Project Details</h3>
+								<div id="project1-details"></div>
+							</div>
+							<div id="project2">
+								<div id="projectHeader">
+									<h1>Project Name: Dog Trading Cards</h1>
+									<br>
+								</div>
+								
+								<a href="https://github.com/dunton/tradingCard">
+									<img class="img-responsive" src="media/card.jpg" alt="Trading Card">
+								</a>
+								<br>
+								<h3>Project Details</h3>
+								<div id="project2-details"></div>
+							</div>
+							<div id="project3">
+								<div id="projectHeader">
+									<h1>Project Name: Portfolio Spec</h1>
+									<br>
+								</div>
+								<a href="https://github.com/dunton/portfolioSpec">
+										<img class="img-responsive" src="media/portfolio.jpg" alt="Portfolio">
+								</a>
+								<br>
+								<h3>Project Details</h3>
+								<div id="project3-details"></div>
+							</div>
+							<div id="project4">
+								<div id="projectHeader">
+									<h1>Project Name: Adidas Scraper</h1>
+									<br>
+								</div>
+								<a href="https://github.com/dunton/adidasScraper">
+										<img class="img-responsive" src="media/adidasScraper.jpg" alt="Portfolio">
+								</a>
+								<br>
+								<h3>Project Details</h3>
+								<div id="project4-details"></div>
+							</div>
+							<div id="project5">
+								<div id="projectHeader">
+									<h1>Project Name: Website Optimization</h1>
+									<br>
+								</div>
+								<a href="https://github.com/dunton">
+										<img class="img-responsive" src="media/optimization.png" alt="Portfolio">
+								</a>
+								<br>
+								<h3>Project Details</h3>
+								<div id="project5-details"></div>
+							</div>
+
+					
+							<div id="resume">
+								<h1 id="name">Ryan Dunton</h1>
+								<h4 id="living">Manhattan, New York</h4>
+								<h4 id="contactInfo">208.262.6461 | ryandunton1@gmail.com | github.com/dunton</h4>
+								<p id="skills">Technical Skillset: Javascript, 	Python, SQL, HTML/CSS, JQuery, Git, Linux</p>
+								<p id="skills">Frameworks: Bootstrap, Knockout, Flask, 	Django</p>
+								<h4>Relevant Experience</h4>
+								<hr id="resumeHR">
+								<p><h4 class="company">Udacity</h4><span id="location">Denver, CO</span></p>
+								<p class="position"><i><b>Front-End and Full Stack Web Developer Nanodegrees</i></b></p>
+								<p class="dates">2/16-8/16</p>
+								<i>Project: Neighborhood Map</i>
+								<ul>
+									<li>Used the MVC Javascript framework, Knockout, to construct a web application featuring my local neighborhood. I accessed the Google Maps API to display locations on the Map and allow users to query through available map points to gain information on specific locations</li>
+									<li>Worked with the Google Maps API to access and implement API specific features such as Street View, Markers and Info Window while optimizing scripts for website performance</li>
+									<li>Designed website using HTML/CSS and loaded in data using Knockout’s declarative binding features</li>
+								</ul>
+								<i>Project: Arcade Game</i>
+								<ul>
+									<li>Tasked to recreate the classic arcade game “Frogger” with utilizing Javascript, JQuery and HTML/CSS</li>
+									<li>Took advantage of Javascript’s object-oriented features such as prototyping and constructors to build out  various application features </li>
+									<li>Worked with JQuery to keep an updating score displayed for the player at the top of the web page</li>
+									<li>Modified images by applying various effects and filters and created scripts for web page animation</li>
+								</ul>
+								<i>Project: News and Location Display</i>
+								<ul>
+									<li>Built web page accessing Wikipedia, the New York Times and Google Maps API that took an address from a user and displayed their home, recent news articles from that area and Wikipedia entries from there</li>
+									<li>Implemented functions and features for error handling for certain edge cases and scenarios</li>
+								</ul>
+								<i>Project: Interactive Resume</i>
+								<ul>
+									<li>Worked with JQuery to manipulate the DOM and display JSON data into a resume displayed as a web page</li>
+									<li>Worked with HTML and CSS to style resume to present itself for maximum cleanliness and clarity</li>
+								</ul>
+								<i>Project: Website Design Mockup</i>
+								<ul>
+									<li>Took a design mockup for a website and used Bootstrap to build a responsive website that functioned on all sized screens and matched the specific design requirements given on the mockup</li>
+									<li>Built website on Django to allow for full functionality and deployment after front-end completion</li>
+								</ul>
+								<h4 class="company">Quantifind</h4>
+								<i id="companyDescription">Analytics startup using unstructured data to analyze consumer purchasing behavior</i>
+								<p class="location">Menlo Park, CA</p>
+								<p><span class="position"><i><b>Talent Coordinator</i></b></span><span class="dates">4/15 - 1/16</span></p>
+								<ul>
+									<li>Quantifind set out to double the size its engineering and data science teams in 2016, with this increased emphasis on scaling the amount of technical talent I was asked to shift over and help with recruiting</li>
+									<li>Screened software engineers, outside sales reps and data scientists to determine if their previous work experience, education and culture fit warrants being moved on to the next step in the interview process</li>
+								</ul>
+								<p class="position"><i><b>Sales Development</i></b></p>
+								<ul>
+									<li>Strategized and coordinated with Quantifind’s marketing team to craft and sharpen campaign outreach</li>
+									<li>Worked in a client facing role with Outside Reps providing product knowledge and prospect information</li>
+									<li>Assisted Quantifind’s Andreessen-Horowitz liaison in his pitches to the VC firm’s portfolio companies</li>
+									<li>Communicated with gate-keepers and high level executives to book initial meetings for Quantifind sales reps at large brands such as Spotify, Wendy’s, Red Bull, Wing Stop, Tim Horton’s and Pandora</li>
+								</ul>
+								<h4>Education</h4>
+								<hr id="resumeHR">
+								<ul>
+									<li><span id="school">Boise State University, Boise, ID </span><span id="schoolDates">8/11 - 12/14</span></li>
+									<p id="degree"><i>Degree: BA Economics</i></p>
+									<li><span id="school">Whitworth University, Spokane, WA </span><span id="schoolDates">8/10 - 5/11</span></li>
+								</ul>
+							</div>
+						</div>		
+					</div>
+		
+					<div class="col-xs-1 arrow">
+						<div id="right-arrow">
+							<a id="two" href="#" onclick='showProjects(addCounter()); showProjectDetails(secondAddCounter());'>
+								<img class="img-responsive" src="media/right-arrow.jpg">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		
+		</div>
+<!-- ________________________________________________________ -->
+		<div class="container small-screen">
+			<div class="row">
+				<div class="col-xs-4">
+					<div class="navbar">
+						<div class="name">
+							<h1>Ryan Dunton</h1>
+							<h3>Developer</h3>
+						</div>
+ 
+						<div class="link large" href="#">
+						  	<span class="active"><i class="icon-twitter"></i>Projects</span>
+						  	<ul class="hover-top">
+						  		<a href="#" onclick='showProjectsSmall("project0-small"); showProjectDetailsSmall("project0-details-small"); setCount(0);'>Bugger Game</a>
+						    	<a href="#" onclick='showProjectsSmall("project1-small"); showProjectDetailsSmall("project1-details-small"); setCount(1);'>Location Map</a> 
+							    	
+					    		<a href="#" onclick='showProjectsSmall("project2-small"); showProjectDetailsSmall("project2-details-small"); setCount(2);'>Dog Trading Cards</a>
+					    	
+
+						  	</ul>
+						  	<ul class="hover-bot">
+						    	<a href="#" onclick='showProjectsSmall("project3-small"); showProjectDetailsSmall("project3-details-small"); setCount(3);'>Portfolio Spec</a>
+						    	<a href="#" onclick='showProjectsSmall("project4-small"); showProjectDetailsSmall("project4-details-small"); setCount(4);'>Adidas Scraper</a>
+						    	<a href="#" onclick='showProjectsSmall("project5-small"); showProjectDetailsSmall("project5-details-small"); setCount(5);'>Website Optimization</a>
+
+
+						  	</ul>
+					  
+						</div>
+						<div class="link" href="#">
+						  <span class="active"><i class="icon-facebook"></i>Resume</span>
+						  	<ul class="hover-bot">
+						    	<a href="media/DuntonResume_FE.pdf" download>Download</a> 
+						  	</ul>
+						  	<ul class="hover-top">
+					    		<a href="#" onclick='showProjectsSmall("resume-small")'>View Resume</a> 
+						  	</ul>
+							</div>
+							<div class="link" href="#">
+						  	<span class="active"><i class="icon-google-plus"></i>Social</span>
+						  	<ul class="hover-bot">
+						    	<a href="https://www.linkedin.com/in/ryan-dunton-8b2ba152">LinkedIn</a> 
+						  	</ul>
+						  	<ul class="hover-top">
+						    	<a href="https://www.twitter.com/Ryan_Dunton">Twitter</a> 
+						  	</ul>
+							</div>
+						<div class="end"></div>
+					</div>
+					<br>
+					<br>
+					<div class="row">
+						<div class="col-xs-4">
+							<div id="small-left-arrow">
+									<a href='#' onclick='showProjectsSmall(minusCounterSmall()); showProjectDetailsSmall(secondMinusCounterSmall());'>
+										<img class="img-responsive" src="media/left-arrow.jpg">
+									</a>
+							</div>
+						</div>
+						<div class="col-xs-4">
+							<h4 id="projectScroll">Scroll Through Projects</h4>
+						</div>
+						<div class="col-xs-4">
+							<div id="small-right-arrow">
+									<a href='#' onclick='showProjectsSmall(addCounterSmall()); showProjectDetailsSmall(secondAddCounterSmall());'>
+										<img class="img-responsive" src="media/right-arrow.jpg">
+									</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			
+					<div class="col-xs-8">
+						<div class="projectView-small">
+							
+							<div id="project0-small">
+								<div id="projectHeader">
+									<h1>Project Name: Bugger Game</h1>
+									<br>
+								</div>
+									<a href="https://github.com/dunton/froggerGame" target="_blank">
+										<img class="img-responsive" src = "media/bugger.jpg" alt= "Bugger Pic">	
+									</a>
+									<br>
+									<h3>Project Details</h3>
+									<div id="project0-details-small"></div>					
+							</div>
+							<div id="project1-small">
+								<div id="projectHeader">
+									<h1>Project Name: Location Map</h1>
+									<br>
+								</div>
+								<a href="">
+									<img class="img-responsive" src = "media/wiki.jpg" alt="Wiki API">
+								</a>
+								<br>
+								<h3>Project Details</h3>
+								<div id="project1-details-small"></div>
+							</div>
+							<div id="project2-small">
+								<div id="projectHeader">
+									<h1>Project Name: Dog Trading Cards</h1>
+									<br>
+								</div>
+								
+								<a href="https://github.com/dunton/tradingCard">
+									<img class="img-responsive" src="media/card.jpg" alt="Trading Card">
+								</a>
+								<br>
+								<h3>Project Details</h3>
+								<div id="project2-details-small"></div>
+							</div>
+							<div id="project3-small">
+								<div id="projectHeader">
+									<h1>Project Name: Portfolio Spec</h1>
+									<br>
+								</div>
+								<a href="https://github.com/dunton/portfolioSpec">
+										<img class="img-responsive" src="media/portfolio.jpg" alt="Portfolio">
+								</a>
+								<br>
+								<h3>Project Details</h3>
+								<div id="project3-details-small"></div>
+							</div>
+							<div id="project4-small">
+								<div id="projectHeader">
+									<h1>Project Name: Adidas Scraper</h1>
+									<br>
+								</div>
+								<a href="https://github.com/dunton/adidasScraper">
+										<img class="img-responsive" src="media/adidasScraper.jpg" alt="Portfolio">
+								</a>
+								<br>
+								<h3>Project Details</h3>
+								<div id="project4-details-small"></div>
+							</div>
+							<div id="project5-small">
+								<div id="projectHeader">
+									<h1>Project Name: Website Optimization</h1>
+									<br>
+								</div>
+								<a href="https://github.com/dunton">
+										<img class="img-responsive" src="media/optimization.png" alt="Portfolio">
+								</a>
+								<br>
+								<h3>Project Details</h3>
+								<div id="project5-details-small"></div>
+							</div>
+
+					
+							<div id="resume-small">
+								<h1 id="name">Ryan Dunton</h1>
+								<h4 id="living">Manhattan, New York</h4>
+								<h4 id="contactInfo">208.262.6461 | ryandunton1@gmail.com | github.com/dunton</h4>
+								<p id="skills">Technical Skillset: Javascript, 	Python, SQL, HTML/CSS, JQuery, Git, Linux</p>
+								<p id="skills">Frameworks: Bootstrap, Knockout, Flask, 	Django</p>
+								<h4>Relevant Experience</h4>
+								<hr id="resumeHR">
+								<p><h4 class="company">Udacity</h4><span id="location">Denver, CO</span></p>
+								<p class="position"><i><b>Front-End and Full Stack Web Developer Nanodegrees</i></b></p>
+								<p class="dates">2/16-8/16</p>
+								<i>Project: Neighborhood Map</i>
+								<ul>
+									<li>Used the MVC Javascript framework, Knockout, to construct a web application featuring my local neighborhood. I accessed the Google Maps API to display locations on the Map and allow users to query through available map points to gain information on specific locations</li>
+									<li>Worked with the Google Maps API to access and implement API specific features such as Street View, Markers and Info Window while optimizing scripts for website performance</li>
+									<li>Designed website using HTML/CSS and loaded in data using Knockout’s declarative binding features</li>
+								</ul>
+								<i>Project: Arcade Game</i>
+								<ul>
+									<li>Tasked to recreate the classic arcade game “Frogger” with utilizing Javascript, JQuery and HTML/CSS</li>
+									<li>Took advantage of Javascript’s object-oriented features such as prototyping and constructors to build out  various application features </li>
+									<li>Worked with JQuery to keep an updating score displayed for the player at the top of the web page</li>
+									<li>Modified images by applying various effects and filters and created scripts for web page animation</li>
+								</ul>
+								<i>Project: News and Location Display</i>
+								<ul>
+									<li>Built web page accessing Wikipedia, the New York Times and Google Maps API that took an address from a user and displayed their home, recent news articles from that area and Wikipedia entries from there</li>
+									<li>Implemented functions and features for error handling for certain edge cases and scenarios</li>
+								</ul>
+								<i>Project: Interactive Resume</i>
+								<ul>
+									<li>Worked with JQuery to manipulate the DOM and display JSON data into a resume displayed as a web page</li>
+									<li>Worked with HTML and CSS to style resume to present itself for maximum cleanliness and clarity</li>
+								</ul>
+								<i>Project: Website Design Mockup</i>
+								<ul>
+									<li>Took a design mockup for a website and used Bootstrap to build a responsive website that functioned on all sized screens and matched the specific design requirements given on the mockup</li>
+									<li>Built website on Django to allow for full functionality and deployment after front-end completion</li>
+								</ul>
+								<h4 class="company">Quantifind</h4>
+								<i id="companyDescription">Analytics startup using unstructured data to analyze consumer purchasing behavior</i>
+								<p class="location">Menlo Park, CA</p>
+								<p><span class="position"><i><b>Talent Coordinator</i></b></span><span class="dates">4/15 - 1/16</span></p>
+								<ul>
+									<li>Quantifind set out to double the size its engineering and data science teams in 2016, with this increased emphasis on scaling the amount of technical talent I was asked to shift over and help with recruiting</li>
+									<li>Screened software engineers, outside sales reps and data scientists to determine if their previous work experience, education and culture fit warrants being moved on to the next step in the interview process</li>
+								</ul>
+								<p class="position"><i><b>Sales Development</i></b></p>
+								<ul>
+									<li>Strategized and coordinated with Quantifind’s marketing team to craft and sharpen campaign outreach</li>
+									<li>Worked in a client facing role with Outside Reps providing product knowledge and prospect information</li>
+									<li>Assisted Quantifind’s Andreessen-Horowitz liaison in his pitches to the VC firm’s portfolio companies</li>
+									<li>Communicated with gate-keepers and high level executives to book initial meetings for Quantifind sales reps at large brands such as Spotify, Wendy’s, Red Bull, Wing Stop, Tim Horton’s and Pandora</li>
+								</ul>
+								<h4>Education</h4>
+								<hr id="resumeHR">
+								<ul>
+									<li><span id="school">Boise State University, Boise, ID </span><span id="schoolDates">8/11 - 12/14</span></li>
+									<p id="degree"><i>Degree: BA Economics</i></p>
+									<li><span id="school">Whitworth University, Spokane, WA </span><span id="schoolDates">8/10 - 5/11</span></li>
+								</ul>
+							</div>
+						</div>		
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container mobile">
+			<div class="row">
+				<div class="col-xs-12 top-header">
+					<h3>Ryan Dunton</h3>
+					<h4>Front-End Developer</h4>
+				</div>
+			</div>
+			<div class="row">
+				
+				<div class="col-xs-12">
+					<div class="project-view-mobile">
+						<div id="project0-mobile">
+								<div id="projectHeader">
+									<h1>Project Name: Bugger Game</h1>
+									<br>
+								</div>
+									<a href="https://github.com/dunton/froggerGame" target="_blank">
+										<img class="img-responsive" src = "media/bugger.jpg" alt= "Bugger Pic">	
+									</a>
+									<br>
+									<h3>Project Details</h3>
+									<div id="project0-details-mobile"></div>					
+							</div>
+							<div id="project1-mobile">
+								<div id="projectHeader">
+									<h1>Project Name: Location Map</h1>
+									<br>
+								</div>
+								<a href="">
+									<img class="img-responsive" src = "media/wiki.jpg" alt="Wiki API">
+								</a>
+								<br>
+								<h3>Project Details</h3>
+								<div id="project1-details-mobile"></div>
+							</div>
+							<div id="project2-mobile">
+								<div id="projectHeader">
+									<h1>Project Name: Dog Trading Cards</h1>
+									<br>
+								</div>
+								
+								<a href="https://github.com/dunton/tradingCard">
+									<img class="img-responsive" src="media/card.jpg" alt="Trading Card">
+								</a>
+								<br>
+								<h3>Project Details</h3>
+								<div id="project2-details-mobile"></div>
+							</div>
+							<div id="project3-mobile">
+								<div id="projectHeader">
+									<h1>Project Name: Portfolio Spec</h1>
+									<br>
+								</div>
+								<a href="https://github.com/dunton/portfolioSpec">
+										<img class="img-responsive" src="media/portfolio.jpg" alt="Portfolio">
+								</a>
+								<br>
+								<h3>Project Details</h3>
+								<div id="project3-details-mobile"></div>
+							</div>
+							<div id="project4-mobile">
+								<div id="projectHeader">
+									<h1>Project Name: Adidas Scraper</h1>
+									<br>
+								</div>
+								<a href="https://github.com/dunton/adidasScraper">
+										<img class="img-responsive" src="media/adidasScraper.jpg" alt="Portfolio">
+								</a>
+								<br>
+								<h3>Project Details</h3>
+								<div id="project4-details-mobile"></div>
+							</div>
+							<div id="project5-mobile">
+								<div id="projectHeader">
+									<h1>Project Name: Website Optimization</h1>
+									<br>
+								</div>
+								<a href="https://github.com/dunton">
+										<img class="img-responsive" src="media/optimization.png" alt="Portfolio">
+								</a>
+								<br>
+								<h3>Project Details</h3>
+								<div id="project5-details-mobile"></div>
+							</div>
+							<div id="resume-mobile">
+								<h1 id="name">Ryan Dunton</h1>
+								<h4 id="living">Manhattan, New York</h4>
+								<h4 id="contactInfo">208.262.6461 | ryandunton1@gmail.com | github.com/dunton</h4>
+								<p id="skills">Technical Skillset: Javascript, 	Python, SQL, HTML/CSS, JQuery, Git, Linux</p>
+								<p id="skills">Frameworks: Bootstrap, Knockout, Flask, 	Django</p>
+								<h4>Relevant Experience</h4>
+								<hr id="resumeHR">
+								<p><h4 class="company">Udacity</h4><span id="location">Denver, CO</span></p>
+								<p class="position"><i><b>Front-End and Full Stack Web Developer Nanodegrees</i></b></p>
+								<p class="dates">2/16-8/16</p>
+								<i>Project: Neighborhood Map</i>
+								<ul>
+									<li>Used the MVC Javascript framework, Knockout, to construct a web application featuring my local neighborhood. I accessed the Google Maps API to display locations on the Map and allow users to query through available map points to gain information on specific locations</li>
+									<li>Worked with the Google Maps API to access and implement API specific features such as Street View, Markers and Info Window while optimizing scripts for website performance</li>
+									<li>Designed website using HTML/CSS and loaded in data using Knockout’s declarative binding features</li>
+								</ul>
+								<i>Project: Arcade Game</i>
+								<ul>
+									<li>Tasked to recreate the classic arcade game “Frogger” with utilizing Javascript, JQuery and HTML/CSS</li>
+									<li>Took advantage of Javascript’s object-oriented features such as prototyping and constructors to build out  various application features </li>
+									<li>Worked with JQuery to keep an updating score displayed for the player at the top of the web page</li>
+									<li>Modified images by applying various effects and filters and created scripts for web page animation</li>
+								</ul>
+								<i>Project: News and Location Display</i>
+								<ul>
+									<li>Built web page accessing Wikipedia, the New York Times and Google Maps API that took an address from a user and displayed their home, recent news articles from that area and Wikipedia entries from there</li>
+									<li>Implemented functions and features for error handling for certain edge cases and scenarios</li>
+								</ul>
+								<i>Project: Interactive Resume</i>
+								<ul>
+									<li>Worked with JQuery to manipulate the DOM and display JSON data into a resume displayed as a web page</li>
+									<li>Worked with HTML and CSS to style resume to present itself for maximum cleanliness and clarity</li>
+								</ul>
+								<i>Project: Website Design Mockup</i>
+								<ul>
+									<li>Took a design mockup for a website and used Bootstrap to build a responsive website that functioned on all sized screens and matched the specific design requirements given on the mockup</li>
+									<li>Built website on Django to allow for full functionality and deployment after front-end completion</li>
+								</ul>
+								<h4 class="company">Quantifind</h4>
+								<i id="companyDescription">Analytics startup using unstructured data to analyze consumer purchasing behavior</i>
+								<p class="location">Menlo Park, CA</p>
+								<p><span class="position"><i><b>Talent Coordinator</i></b></span><span class="dates">4/15 - 1/16</span></p>
+								<ul>
+									<li>Quantifind set out to double the size its engineering and data science teams in 2016, with this increased emphasis on scaling the amount of technical talent I was asked to shift over and help with recruiting</li>
+									<li>Screened software engineers, outside sales reps and data scientists to determine if their previous work experience, education and culture fit warrants being moved on to the next step in the interview process</li>
+								</ul>
+								<p class="position"><i><b>Sales Development</i></b></p>
+								<ul>
+									<li>Strategized and coordinated with Quantifind’s marketing team to craft and sharpen campaign outreach</li>
+									<li>Worked in a client facing role with Outside Reps providing product knowledge and prospect information</li>
+									<li>Assisted Quantifind’s Andreessen-Horowitz liaison in his pitches to the VC firm’s portfolio companies</li>
+									<li>Communicated with gate-keepers and high level executives to book initial meetings for Quantifind sales reps at large brands such as Spotify, Wendy’s, Red Bull, Wing Stop, Tim Horton’s and Pandora</li>
+								</ul>
+								<h4>Education</h4>
+								<hr id="resumeHR">
+								<ul>
+									<li><span id="school">Boise State University, Boise, ID </span><span id="schoolDates">8/11 - 12/14</span></li>
+									<p id="degree"><i>Degree: BA Economics</i></p>
+									<li><span id="school">Whitworth University, Spokane, WA </span><span id="schoolDates">8/10 - 5/11</span></li>
+								</ul>
+							</div>
+
+					</div>
+				</div>
+				
+			</div>
+
+			<div class="row bottom-scroll">
+				<div class="col-xs-4">
+					<div id="mobile-left-arrow">
+							<a href='#' onclick='showProjectsMobile(minusCounterMobile()); showProjectDetailsMobile(secondMinusCounterMobile());'>
+								<img class="img-responsive" src="media/left-arrow.jpg">
+							</a>
+					</div>
+				</div>
+				<div class="col-xs-4 scroll-text">
+					Scroll Through Projects
+				</div>
+					<div class="col-xs-4">
+					<div id="mobile-right-arrow">
+							<a href='#' onclick='showProjectsMobile(addCounterMobile()); showProjectDetailsMobile(secondAddCounterMobile());'>
+								<img class="img-responsive" src="media/right-arrow.jpg">
+							</a>
+					</div>
+				</div>
+			</div>
+			
+			<div class="row mobile-resume">
+				<div class="col-xs-12">
+					<a href="media/DuntonResume_FE.pdf" download>Download Resume</a> 
+				</div>
+			</div>
+
+
+		</div>
+		
+
+		<script src="http://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+		<script type="text/javascript" src="js/models.js"></script>
+		<script type ="text/javascript" src="js/main.js"></script>
+		
+
+	</body>
+</html>
