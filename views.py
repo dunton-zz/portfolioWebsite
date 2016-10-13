@@ -6,13 +6,10 @@ import httplib2
 import requests
 import sys
 import os
-import SimpleHTTPServer
-
-PORT = 8000
 
 app = Flask(__name__)
 
-@app.route('/index')
+@app.route('/')
 def index():
 	return render_template('index.html')
 

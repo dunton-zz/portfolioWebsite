@@ -10,10 +10,13 @@ secondCount = 1;
 
 
 function minusCounter() {
+	var leftArrow = getElementById('left-arrow');
 	if (count == 0) {
+		leftArrow.style.display = "none";
 		return "project0";
 	}
 	else {
+		leftArrow.style.display = "block";
 		count = count-1;
 		var projectNum = "project" + count.toString();
 		console.log(count);
