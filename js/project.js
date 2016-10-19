@@ -10,13 +10,17 @@ secondCount = 1;
 
 
 function minusCounter() {
-	var leftArrow = getElementById('left-arrow');
-	if (count == 0) {
+	var isShowing = document.getElementById('project1');
+	var leftArrow = document.getElementById('left-arrow');
+	var rightArrow = document.getElementById('right-arrow');
+	rightArrow.style.display = "block";
+	if (isShowing.style.display === "block") {
 		leftArrow.style.display = "none";
+	}
+	if (count == 0) {
 		return "project0";
 	}
 	else {
-		leftArrow.style.display = "block";
 		count = count-1;
 		var projectNum = "project" + count.toString();
 		console.log(count);
@@ -25,6 +29,14 @@ function minusCounter() {
 };
 
 function addCounter (){
+	var isShowing = document.getElementById('project4');
+	var rightArrow = document.getElementById('right-arrow');
+	var leftArrow = document.getElementById('left-arrow');
+	leftArrow.style.display = "block";
+
+	if (isShowing.style.display === "block") {
+		rightArrow.style.display = "none";
+	}
 	if (count == 5) {
 		return "project5"
 	}
@@ -43,7 +55,6 @@ function secondAddCounter() {
 	else { 
 		secondCount = secondCount + 1;
 		var projectNum = "project" + secondCount.toString() + "-details";
-		console.log(secondCount);
 		return projectNum;
 	};	
 }
@@ -67,6 +78,13 @@ function setCount(set) {
 
 
 function minusCounterSmall() {
+	var isShowing = document.getElementById('project1-small');
+	var leftArrow = document.getElementById('small-left-arrow');
+	var rightArrow = document.getElementById('small-right-arrow');
+	rightArrow.style.display = "block";
+	if (isShowing.style.display === "block") {
+		leftArrow.style.display = "none";
+	}
 	if (count == 0) {
 		return "project0-small";
 	}
@@ -79,6 +97,13 @@ function minusCounterSmall() {
 };
 
 function addCounterSmall (){
+	var isShowing = document.getElementById('project4-small');
+	var rightArrow = document.getElementById('small-right-arrow');
+	var leftArrow = document.getElementById('small-left-arrow');
+	leftArrow.style.display = "block";
+	if (isShowing.style.display === "block") {
+		rightArrow.style.display = "none";
+	}
 	if (count == 5) {
 		return "project5-small"
 	}
@@ -116,6 +141,13 @@ function secondMinusCounterSmall() {
 
 
 function minusCounterMobile() {
+	var isShowing = document.getElementById('project1-mobile');
+	var leftArrow = document.getElementById('mobile-left-arrow');
+	var rightArrow = document.getElementById('mobile-right-arrow');
+	rightArrow.style.display = "block";
+	if (isShowing.style.display === "block") {
+		leftArrow.style.display = "none";
+	}
 	if (count == 0) {
 		return "project0-mobile";
 	}
@@ -128,6 +160,13 @@ function minusCounterMobile() {
 };
 
 function addCounterMobile (){
+	var isShowing = document.getElementById('project4-mobile');
+	var rightArrow = document.getElementById('mobile-right-arrow');
+	var leftArrow = document.getElementById('mobile-left-arrow');
+	leftArrow.style.display = "block";
+	if (isShowing.style.display === "block") {
+		rightArrow.style.display = "none";
+	}
 	if (count == 5) {
 		return "project5-mobile"
 	}
