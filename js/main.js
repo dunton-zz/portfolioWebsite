@@ -1,61 +1,17 @@
-
-$(document).ready(function(){
-    $('.projectView').hover(function() {
-      $(this).addClass('transition');
-    }, function () {
-      $(this).removeClass('transition');
-    });
-});
-
-function screen_resize() {
-    var projectName = "project" + count.toString();
-    var projectSmallName = "project" + count.toString() + "-small";
-    var projectMobileName = "project" + count.toString() + "-mobile";
-
-    var projectDetails = "project" + count.toString() + "-details";
-    var projectDetailsSmall = "project" + count.toString() + "-details-small";
-    var projectDetailsMobile = "project" + count.toString() + "-details-mobile";
-
-    var w = parseInt(window.innerWidth);
-
-    if (w > 981) {
-      showProjects(projectName);
-      showProjectDetails(projectDetails);
-      console.log('large screen');
-    }
-
-    else if (701 < w < 980) {
-      showProjectsSmall(projectSmallName);
-      showProjectDetailsSmall(projectDetailsSmall);
-      console.log('small screen');
-    }
-
-    if (w < 700) {
-      showProjectsMobile(projectMobileName);
-      showProjectDetailsMobile(projectDetailsMobile);
-      console.log('mobile');
-    }
-    console.log('Page size ' + w);
-    return
+function resumeJump() {
+    var resumeDisplay = document.getElementById("resume");
+    if (resumeDisplay.style.display != "block") {
+      $(document).ready(function(){
+          $('.projectView').hover(function() {
+            $(this).addClass('transition');
+          }, function () {
+            $(this).removeClass('transition');
+          });
+     });
+  }
 }
 
-var contact = {
-  "Email": "ryandunton1@gmail.com",
-  "Phone": "208-262-6461",
-  "Twitter": "@ryan_dunton"
-}
-
-var loadContact = function() {
-  var formattedEmail = '<h4>' + contact.Email + '</h4>';
-  var formattedPhone = '<h4>' + contact.Phone + '</h4>';
-  var formattedTwitter = '<h4>' + contact.Twitter + '</h4>';
-
-  $('#email').append(formattedEmail);
-  $('#phone').append(formattedPhone);
-  $('#twitter').append(formattedTwitter);
-
-};
-
+resumeJump();
 
 function showProjects(objName) {
     var projectDisplay = document.getElementById(objName);
@@ -222,8 +178,6 @@ function showProjectDetailsMobile(objName) {
     projectsArr[4] = "project4-details-mobile";
     projectsArr[5] = "project5-details-mobile";
     
-
-    
     var tempProject;    
     
     for (var i = 0; i< projectsArr.length; i++){
@@ -236,17 +190,5 @@ function showProjectDetailsMobile(objName) {
       }
     }
     return 
-
 };
 
-$(document).ready(function (e) {
-  screen_resize();
-});
-
-$(window).resize(function(e) {
-  screen_resize();
-});
-
-
-
-loadContact();
