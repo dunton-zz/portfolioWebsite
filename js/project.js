@@ -1,12 +1,5 @@
-var project0 = "project0";
-var project1 = "project1";
-var project2 = "project2";
-var project3 = "project3";
-var project4 = "project4";
-var project5 = "project5";
-
-count = 1;
-secondCount = 1;
+ar count = 1;
+var secondCount = 1;
 
 
 function minusCounter() {
