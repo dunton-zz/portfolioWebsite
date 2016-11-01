@@ -1,4 +1,4 @@
-ar count = 1;
+var count = 1;
 var secondCount = 1;
 
 
